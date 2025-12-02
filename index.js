@@ -55,7 +55,7 @@ app.get("/events", async (req, res) => {
     if (allEvents) {
       res.json(allEvents);
     } else {
-      res.status(404).json({ message: "Failed to fetch event!" });
+      res.status(404).json({ message: "Failed to fetch  event!" });
     }
   } catch (error) {
     res.status(500).json({ error: "Error ocurred while fetching event!" });
